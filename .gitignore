@@ -1,0 +1,18 @@
+# Environnements virtuels
+venv/
+env/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# Données volumineuses (si jamais tu télécharges des datasets)
+*.csv
+*.json
