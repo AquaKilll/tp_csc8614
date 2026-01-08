@@ -4,7 +4,7 @@ Question 1.b. Dans TP1/rapport.md, ajoutez immédiatement un court en-tête (que
 
 (i) Nom/Prénom : Davoust/Kilian
 
-(ii)la commande d’installation/activation d’environnement utilisée
+(ii) la commande d’installation/activation d’environnement utilisée
 python3 -m venv venv
 source venv/bin/activate
 pip install -r TP1/requirements.txt
@@ -259,17 +259,15 @@ Question 5.c. Générez maintenant du texte avec sampling en utilisant : tempér
 
 Copiez au moins 2 sorties différentes.
 
-Question 5.c.
 SEED 1
 Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
 The future of artificial intelligence is up in the air, and the future of artificial intelligence is now about to change. For now, we're just waiting for the technology to be perfected so that we can take it to the next level.
 
 The
-----------------------------------------
+
 SEED 2
 Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
 The future of artificial intelligence is not clear, but that could change. The early progress of AI has been largely due to the ability to do some things fairly quickly, like calculate things, but the future is not clear. The early progress of AI has
-----------------------------------------
 
 Comparez au greedy : diversité, cohérence, répétitions (5–10 lignes).
 
@@ -343,5 +341,5 @@ Expliquez pourquoi cela ralentit (complexité / exploration de chemins).
 On observe un ralentissement notable (+40% de temps en passant de 10 à 20 beams). Cela s'explique par le fonctionnement de l'algorithme : à chaque pas de temps (chaque nouveau mot généré), le modèle ne fait pas qu'une seule prédiction. 
 Il doit :
 - Maintenir *k* hypothèses (chemins) en parallèle.
-- Calculer les probabilités pour les *k \times |Vocabulaire|* suites possibles.
+- Calculer les probabilités pour les *k * |Vocabulaire|* suites possibles.
 - Trier et sélectionner les *k* meilleures nouvelles hypothèses. La complexité de l'algorithme est donc linéairement dépendante de la largeur du faisceau. Plus on augmente ce nombre pour chercher la "phrase parfaite", plus le coût de calcul explose, souvent avec des rendements décroissants (ici, le texte n'a pas changé malgré le surcoût).
