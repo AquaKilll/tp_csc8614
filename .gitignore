@@ -16,3 +16,4 @@ __pycache__/
 # Données volumineuses (si jamais tu télécharges des datasets)
 *.csv
 *.json
+TP2/gpt2_weights/
