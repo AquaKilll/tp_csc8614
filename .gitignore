@@ -17,3 +17,4 @@ __pycache__/
 *.csv
 *.json
 TP2/gpt2_weights/
+TP3/gpt2_weights/
