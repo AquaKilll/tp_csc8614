@@ -1,0 +1,12 @@
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.020649Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E09"}}
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.021289Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "escalate", "category": "other", "priority": 1, "risk_level": "high", "needs_retrieval": false, "retrieval_query": "", "rationale": "Suspicion de prompt injection."}, "note": "injection_heuristic_triggered"}}
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.022530Z", "event": "node_start", "data": {"node": "stub_escalate"}}
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.022739Z", "event": "node_end", "data": {"node": "stub_escalate", "status": "ok"}}
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.023281Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.023425Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "handoff"}}
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.040878Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E09"}}
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.041147Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "escalate", "category": "other", "priority": 1, "risk_level": "high", "needs_retrieval": false, "retrieval_query": "", "rationale": "Suspicion de prompt injection."}, "note": "injection_heuristic_triggered"}}
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.041957Z", "event": "node_start", "data": {"node": "stub_escalate"}}
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.042035Z", "event": "node_end", "data": {"node": "stub_escalate", "status": "ok"}}
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.042827Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "13c5c646-e6c6-42ab-b117-daeb4c302d70", "ts": "2026-01-27T20:53:36.042948Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "handoff"}}

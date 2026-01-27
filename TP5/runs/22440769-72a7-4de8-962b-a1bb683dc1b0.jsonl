@@ -1,0 +1,12 @@
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:42:56.785484Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E09"}}
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:43:06.393184Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "escalate", "category": "other", "priority": 1, "risk_level": "high", "needs_retrieval": true, "retrieval_query": "email policy", "rationale": "Email from a potentially malicious sender (hacker@evil.com)"}}}
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:43:06.395339Z", "event": "node_start", "data": {"node": "stub_escalate"}}
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:43:06.395470Z", "event": "node_end", "data": {"node": "stub_escalate", "status": "ok"}}
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:43:06.396001Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:43:06.396106Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "handoff"}}
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:43:06.415706Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E09"}}
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:43:09.025652Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "admin", "priority": 1, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "règlements concernant le traitement des mails urgents de l'adresse hacker@evil.com", "rationale": "Email d'origine suspecte, vérification du règlement nécessaire."}}}
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:43:09.027301Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:43:09.027437Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:43:09.027975Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "22440769-72a7-4de8-962b-a1bb683dc1b0", "ts": "2026-01-27T20:43:09.028069Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "clarification"}}

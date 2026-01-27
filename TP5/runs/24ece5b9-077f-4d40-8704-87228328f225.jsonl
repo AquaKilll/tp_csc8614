@@ -1,0 +1,12 @@
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:24.494744Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E09"}}
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:26.631576Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "escalate", "category": "other", "priority": 1, "risk_level": "high", "needs_retrieval": false, "retrieval_query": "", "rationale": "Email from potentially malicious sender 'hacker@evil.com' with blank body"}}}
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:26.632895Z", "event": "node_start", "data": {"node": "stub_escalate"}}
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:26.632992Z", "event": "node_end", "data": {"node": "stub_escalate", "status": "ok"}}
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:26.633637Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:26.633730Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "handoff"}}
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:26.651453Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E09"}}
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:28.469077Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "escalate", "category": "other", "priority": 1, "risk_level": "high", "needs_retrieval": false, "retrieval_query": "", "rationale": "Email from suspicious source 'hacker@evil.com' without any content."}}}
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:28.470178Z", "event": "node_start", "data": {"node": "stub_escalate"}}
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:28.470275Z", "event": "node_end", "data": {"node": "stub_escalate", "status": "ok"}}
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:28.470768Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "24ece5b9-077f-4d40-8704-87228328f225", "ts": "2026-01-27T20:49:28.470845Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "handoff"}}

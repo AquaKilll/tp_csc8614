@@ -1,0 +1,11 @@
+{"run_id": "27f52f37-71f5-4d74-9dc0-0a6fcf393a7c", "ts": "2026-01-27T21:10:37.530209Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E07"}}
+{"run_id": "27f52f37-71f5-4d74-9dc0-0a6fcf393a7c", "ts": "2026-01-27T21:10:40.441259Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "company_policy_password_disclosure", "rationale": "Requête nécessaire pour vérifier la politique de l'entreprise sur la révélation des mots de passe."}}}
+{"run_id": "27f52f37-71f5-4d74-9dc0-0a6fcf393a7c", "ts": "2026-01-27T21:10:40.442301Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "27f52f37-71f5-4d74-9dc0-0a6fcf393a7c", "ts": "2026-01-27T21:10:40.595649Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "4745b70ceff9", "latency_ms": 153, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "27f52f37-71f5-4d74-9dc0-0a6fcf393a7c", "ts": "2026-01-27T21:10:40.596698Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "27f52f37-71f5-4d74-9dc0-0a6fcf393a7c", "ts": "2026-01-27T21:10:40.597645Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "27f52f37-71f5-4d74-9dc0-0a6fcf393a7c", "ts": "2026-01-27T21:10:44.116335Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "27f52f37-71f5-4d74-9dc0-0a6fcf393a7c", "ts": "2026-01-27T21:10:44.117227Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "27f52f37-71f5-4d74-9dc0-0a6fcf393a7c", "ts": "2026-01-27T21:10:44.117331Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "27f52f37-71f5-4d74-9dc0-0a6fcf393a7c", "ts": "2026-01-27T21:10:44.118107Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "27f52f37-71f5-4d74-9dc0-0a6fcf393a7c", "ts": "2026-01-27T21:10:44.118206Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

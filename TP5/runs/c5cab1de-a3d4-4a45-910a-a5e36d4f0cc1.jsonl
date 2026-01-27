@@ -1,0 +1,22 @@
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:13.933154Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E02"}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:24.263990Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règlement validation stage", "rationale": "Besoin de vérifier les règles concernant les stages."}}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:24.266239Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:26.193563Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "895837da66d1", "latency_ms": 1927, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:26.194594Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:26.195593Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:29.470356Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:29.471176Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:29.471286Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:29.472100Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:29.472218Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:29.498518Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E02"}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:31.647587Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "reglement validation stage", "rationale": "Need to verify the regulation for internships."}}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:31.648734Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:31.787127Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "8fd202aa5774", "latency_ms": 138, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:31.788231Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:31.789155Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:35.954695Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:35.955545Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:35.955638Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 2}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:35.956453Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "c5cab1de-a3d4-4a45-910a-a5e36d4f0cc1", "ts": "2026-01-27T19:09:35.956571Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

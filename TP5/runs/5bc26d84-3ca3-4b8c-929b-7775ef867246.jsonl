@@ -1,0 +1,18 @@
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:10:49.659560Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:10:58.986337Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règlement validation stage", "rationale": "Besoin de vérifier les détails du règlement concernant la validation de l'année en cas de non-validation du stage."}}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:10:58.988104Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:00.688909Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "895837da66d1", "latency_ms": 1700, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:00.690190Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:00.691292Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:04.876236Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:04.877291Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:04.877433Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:04.893990Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:07.663502Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règlement validation stage", "rationale": "Besoin de vérifier le règlement des études car il est demandé de valider le stage en entreprise"}}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:07.664917Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:07.771830Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "895837da66d1", "latency_ms": 106, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:07.772931Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:07.773953Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:10.999820Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:11.001023Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "5bc26d84-3ca3-4b8c-929b-7775ef867246", "ts": "2026-01-22T23:11:11.001130Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 2}}

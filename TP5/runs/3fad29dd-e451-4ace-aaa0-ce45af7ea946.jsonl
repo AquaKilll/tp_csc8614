@@ -1,0 +1,6 @@
+{"run_id": "3fad29dd-e451-4ace-aaa0-ce45af7ea946", "ts": "2026-01-27T21:10:51.807021Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E09"}}
+{"run_id": "3fad29dd-e451-4ace-aaa0-ce45af7ea946", "ts": "2026-01-27T21:10:54.074605Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "other", "priority": 1, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Email from potentially malicious sender (hacker@evil.com), no content provided."}}}
+{"run_id": "3fad29dd-e451-4ace-aaa0-ce45af7ea946", "ts": "2026-01-27T21:10:54.075970Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "3fad29dd-e451-4ace-aaa0-ce45af7ea946", "ts": "2026-01-27T21:10:54.076102Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}
+{"run_id": "3fad29dd-e451-4ace-aaa0-ce45af7ea946", "ts": "2026-01-27T21:10:54.076616Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "3fad29dd-e451-4ace-aaa0-ce45af7ea946", "ts": "2026-01-27T21:10:54.076686Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "clarification"}}

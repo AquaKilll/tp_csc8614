@@ -1,0 +1,4 @@
+{"run_id": "6284e5f0-47fa-4a5e-9dc4-0a139c4f8357", "ts": "2026-01-22T16:30:10.305664Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "6284e5f0-47fa-4a5e-9dc4-0a139c4f8357", "ts": "2026-01-22T16:30:19.562339Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règlement validation stage", "rationale": "Besoin de vérifier le règlement pour la validation de l'année"}}}
+{"run_id": "6284e5f0-47fa-4a5e-9dc4-0a139c4f8357", "ts": "2026-01-22T16:30:19.564006Z", "event": "node_start", "data": {"node": "stub_reply"}}
+{"run_id": "6284e5f0-47fa-4a5e-9dc4-0a139c4f8357", "ts": "2026-01-22T16:30:19.564120Z", "event": "node_end", "data": {"node": "stub_reply", "status": "ok"}}

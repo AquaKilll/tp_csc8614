@@ -1,0 +1,2 @@
+{"run_id": "TEST_RUN", "ts": "2026-01-22T10:16:34.651107Z", "event": "node_start", "data": {"node": "classify_email"}}
+{"run_id": "TEST_RUN", "ts": "2026-01-22T10:16:34.651466Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok"}}

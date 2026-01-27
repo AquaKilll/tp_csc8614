@@ -1,0 +1,22 @@
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:10:59.605683Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E04"}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:02.138435Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règlement validation stage", "rationale": "Necessity to verify the regulations for student internships."}}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:02.139795Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:02.471317Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "895837da66d1", "latency_ms": 331, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:02.472387Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:02.473268Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:08.653183Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:08.654078Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:08.654187Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:08.654810Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:08.654910Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:08.670184Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E04"}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:11.088019Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règlement validation stage", "rationale": "Necessité de vérifier le règlement des études en raison d'allégations de discrimination."}}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:11.089039Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:11.197286Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "895837da66d1", "latency_ms": 108, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:11.198346Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:11.199383Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:16.813631Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:16.814435Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:16.814523Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 2}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:16.815106Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "684015f7-249c-492e-ba8d-692abe1daf2c", "ts": "2026-01-27T19:11:16.815250Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

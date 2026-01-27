@@ -1,0 +1,11 @@
+{"run_id": "ebf18a17-68b0-4763-bc8a-45470e8572e8", "ts": "2026-01-27T21:10:02.323914Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E02"}}
+{"run_id": "ebf18a17-68b0-4763-bc8a-45470e8572e8", "ts": "2026-01-27T21:10:04.529012Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règlement validation stage", "rationale": "Vérification nécessaire pour les règles d'études"}}}
+{"run_id": "ebf18a17-68b0-4763-bc8a-45470e8572e8", "ts": "2026-01-27T21:10:04.530095Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "ebf18a17-68b0-4763-bc8a-45470e8572e8", "ts": "2026-01-27T21:10:04.662200Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "895837da66d1", "latency_ms": 131, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "ebf18a17-68b0-4763-bc8a-45470e8572e8", "ts": "2026-01-27T21:10:04.663390Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "ebf18a17-68b0-4763-bc8a-45470e8572e8", "ts": "2026-01-27T21:10:04.664168Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "ebf18a17-68b0-4763-bc8a-45470e8572e8", "ts": "2026-01-27T21:10:07.545192Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "ebf18a17-68b0-4763-bc8a-45470e8572e8", "ts": "2026-01-27T21:10:07.545975Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "ebf18a17-68b0-4763-bc8a-45470e8572e8", "ts": "2026-01-27T21:10:07.546066Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "ebf18a17-68b0-4763-bc8a-45470e8572e8", "ts": "2026-01-27T21:10:07.546671Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "ebf18a17-68b0-4763-bc8a-45470e8572e8", "ts": "2026-01-27T21:10:07.546855Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

@@ -1,0 +1,7 @@
+{"run_id": "05ebaed3-3d35-4fed-968b-674104a4b38d", "ts": "2026-01-22T16:46:45.600913Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "05ebaed3-3d35-4fed-968b-674104a4b38d", "ts": "2026-01-22T16:46:53.195644Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règlement validation stage", "rationale": "Il y a besoin de vérifier le règlement concernant la validation de l'année académique sans stage validé en entreprise."}}}
+{"run_id": "05ebaed3-3d35-4fed-968b-674104a4b38d", "ts": "2026-01-22T16:46:53.197007Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "05ebaed3-3d35-4fed-968b-674104a4b38d", "ts": "2026-01-22T16:46:55.154892Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "895837da66d1", "latency_ms": 1957, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "05ebaed3-3d35-4fed-968b-674104a4b38d", "ts": "2026-01-22T16:46:55.156095Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "05ebaed3-3d35-4fed-968b-674104a4b38d", "ts": "2026-01-22T16:46:55.156904Z", "event": "node_start", "data": {"node": "stub_reply"}}
+{"run_id": "05ebaed3-3d35-4fed-968b-674104a4b38d", "ts": "2026-01-22T16:46:55.157299Z", "event": "node_end", "data": {"node": "stub_reply", "status": "ok"}}

@@ -1,0 +1,18 @@
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:00.126121Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:10.345558Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règlement validation stage", "rationale": "Besoin de vérifier les règles pour la validation de l'année, car le stade en entreprise n'a pas été validé."}}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:10.347492Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:11.993773Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "895837da66d1", "latency_ms": 1645, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:11.995009Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:11.996107Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:16.485229Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:16.486392Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:16.486526Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:16.503892Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:19.146881Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règlement validation stage", "rationale": "Vérification nécessaire pour déterminer les conditions de validation de l'année, en l'absence du stage validé."}}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:19.148511Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:19.287164Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "895837da66d1", "latency_ms": 138, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:19.288438Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:19.289310Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:23.970068Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:23.971160Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "741da15c-5caf-47a2-b34a-986097c638c3", "ts": "2026-01-23T09:49:23.971279Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 2}}

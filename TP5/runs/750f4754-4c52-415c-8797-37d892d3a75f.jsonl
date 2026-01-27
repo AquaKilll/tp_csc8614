@@ -1,0 +1,12 @@
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:28.805378Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:37.848328Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 2, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Question sur la cuisine non liée aux activités académiques"}}}
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:37.850124Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:37.850249Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:37.850862Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:37.850953Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:37.862473Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:39.993404Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 2, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "La question de cuisine est hors sujet du cadre administratif ou d'études."}}}
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:39.994863Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:39.994984Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:39.995519Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "750f4754-4c52-415c-8797-37d892d3a75f", "ts": "2026-01-22T22:35:39.995698Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}

@@ -1,0 +1,11 @@
+{"run_id": "eb3b7a13-9be9-44f6-9619-8ab04212672e", "ts": "2026-01-27T21:10:13.218124Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E04"}}
+{"run_id": "eb3b7a13-9be9-44f6-9619-8ab04212672e", "ts": "2026-01-27T21:10:15.890185Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "reglement validation stage et règlement contre discrimination", "rationale": "Besoin de vérifier les règles concernant la validation des stages ainsi que celles qui interdisent la discrimination."}}}
+{"run_id": "eb3b7a13-9be9-44f6-9619-8ab04212672e", "ts": "2026-01-27T21:10:15.891247Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "eb3b7a13-9be9-44f6-9619-8ab04212672e", "ts": "2026-01-27T21:10:16.048615Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "0fb667a94a92", "latency_ms": 157, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "eb3b7a13-9be9-44f6-9619-8ab04212672e", "ts": "2026-01-27T21:10:16.049612Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "eb3b7a13-9be9-44f6-9619-8ab04212672e", "ts": "2026-01-27T21:10:16.050329Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "eb3b7a13-9be9-44f6-9619-8ab04212672e", "ts": "2026-01-27T21:10:19.259559Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "eb3b7a13-9be9-44f6-9619-8ab04212672e", "ts": "2026-01-27T21:10:19.260364Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "eb3b7a13-9be9-44f6-9619-8ab04212672e", "ts": "2026-01-27T21:10:19.260458Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "eb3b7a13-9be9-44f6-9619-8ab04212672e", "ts": "2026-01-27T21:10:19.261268Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "eb3b7a13-9be9-44f6-9619-8ab04212672e", "ts": "2026-01-27T21:10:19.261360Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

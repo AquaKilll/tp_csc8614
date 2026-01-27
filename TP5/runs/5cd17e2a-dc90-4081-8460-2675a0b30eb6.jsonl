@@ -1,0 +1,12 @@
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:23.865268Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E09"}}
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:25.934854Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "other", "priority": 1, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "No specific content provided in the email. Requesting more information."}}}
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:25.936150Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:25.936264Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:25.936756Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:25.936842Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "clarification"}}
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:25.955916Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E09"}}
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:27.975369Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "admin", "priority": 1, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Email from a suspicious sender (hacker@evil.com) without any content in the body."}}}
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:27.976416Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:27.976503Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:27.976946Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "5cd17e2a-dc90-4081-8460-2675a0b30eb6", "ts": "2026-01-27T20:45:27.977054Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "clarification"}}
